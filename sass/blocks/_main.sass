@@ -17,7 +17,7 @@
 		opacity: 0.8
 		background-image: linear-gradient( -150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%)
 		z-index: 0
-.header
+.header, .footer
 	// border: 1px solid red
 	display: flex
 	height: 10vh
@@ -27,21 +27,42 @@
 	margin: 0 auto
 	position: relative
 	z-index: 2
-.menu
-	width: 70%
-	&-list
-		display: flex
-		justify-content: space-around
-		list-style: none
-	.list-item
-		text-decoration: none
-		color: #fff
-	.started
-		margin-left: 60px
-		border: 1px solid #fff
-		padding: 10px 20px
-		border-radius: 100px
-		text-transform: uppercase
+.menu, .footer-menu
+	width: 50%
+.menu-list, .footer-list
+	display: flex
+	justify-content: space-between
+	list-style: none
+.list-item
+	text-decoration: none
+	color: #fff
+	font-size: 16px
+	// transition: 0.2s
+.list-item:hover
+	padding-bottom: 5px
+	border-bottom: 2px solid white
+.started
+	margin-left: 40px
+	border: 1px solid #fff
+	padding: 10px 20px
+	border-radius: 100px
+	text-transform: uppercase
+
+.started:hover
+	border: 1px solid rgb(110, 69, 226)
+	border-bottom: none
+	background-color: rgb(110, 69, 226)
+	cursor: pointer
+	padding-bottom: 10px
+	color: #fff
+// .started:hover
+// 	border: 1px solid rgb(110, 69, 226)
+// 	border-bottom: none
+// 	padding-bottom: 10px
+// 	background-color: rgb(110, 69, 226)
+//   color: #fff
+//   cursor: pointer
+
 .main-title
 	position: relative
 	z-index: 2

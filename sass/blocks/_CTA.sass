@@ -1,0 +1,50 @@
+.CTA
+  text-align: center
+  position: relative
+  padding: 20rem
+  color: #fff
+
+.CTA-overlay
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  opacity: 0.8
+  background-image: linear-gradient( -150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%)
+  z-index: -1
+
+.CTA-block
+  background-color: none
+  z-index: 5
+  &__subtitle
+    font-size: 2rem
+    text-transform: uppercase
+    font-weight: 500
+  &__head
+    font-weight: 500
+    font-size: 4rem
+    margin: 1rem auto 2rem
+
+.CTA-block-btns
+  display: flex
+  align-items: center
+  justify-content: space-around
+  width: 43rem
+  margin: 0 auto
+
+.cta-block__btn
+  border: none
+  background-color: #fff
+  color: #c2c9db
+  width: 20rem
+  height: 5rem
+  border-radius: 30px
+  font-size: 1.4rem
+  text-transform: uppercase
+  font-weight: 500
+  transition: 0.4s
+  &:hover
+    background-color: rgb(110, 69, 226)
+    color: #fff
+    cursor: pointer
